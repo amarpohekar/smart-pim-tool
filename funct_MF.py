@@ -27,7 +27,17 @@ def filepath_funct():
 
 def table_extract(filepath):
     table = camelot.read_pdf(filepath,pages='all')
-    table.export('sample_data.xlsx',f = 'xlsx')
+    table.export('sample_data.xlsx',f = 'excel')
     return 0
     
+'''
+@function : openload_tds()
+@brief    : using this function we can select the file and open
+
+'''
+def openload_tds():
+    filepath = filepath_funct()
+    filename = os.path.basename(filepath)
+    print(filename)
+    webbrowser.open_new(filename)
 
