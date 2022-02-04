@@ -2,10 +2,11 @@
 @File  : funct_MF.py
 @brief : this file contain varios function which will be used
 '''
-
+import os
 import tkinter as tk
 from tkinter import filedialog
 import camelot
+import webbrowser
 
 '''
 @function : filepath_funct()
@@ -36,8 +37,8 @@ def table_extract(filepath):
 
 '''
 def openload_tds():
-    filepath = filepath_funct()
-    filename = os.path.basename(filepath)
+    file_path = filepath_funct()
+    filename = os.path.basename(file_path)
     print(filename)
     webbrowser.open_new(filename)
 
