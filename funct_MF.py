@@ -3,6 +3,7 @@
 @brief : this file contain varios function which will be used
 '''
 import os
+from random import sample
 from re import template
 import tkinter as tk
 from tkinter import filedialog
@@ -46,7 +47,7 @@ def openload_tds():
 
 '''
 @function : openload_template()
-@brief    : using this function we can select and the file and open
+@brief    : using this function we can select and open the original load template.
 
 '''
 def openload_template():
@@ -54,4 +55,18 @@ def openload_template():
     template = os.path.basename(file_path)
     print(template)
     webbrowser.open_new(template)
+    return 0
+
+
+
+'''
+@function : openload_sample()
+@brief    : using this function we can select and open sample load template
+
+'''
+def openload_sample():
+    file_path = filepath_funct()
+    sample_name = os.path.basename(file_path)
+    print(sample_name)
+    webbrowser.open_new(sample_name)
     return 0
