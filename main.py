@@ -36,11 +36,9 @@ if __name__=="__main__":
         elif option == 4:
             funct_MF.openload_template()
         
-        
-        # elif option == 5:
-            
-                    
-            
+        elif option == 5:
+            funct_MF.openload_sample()
+                            
         else:
             exit()       
                 
