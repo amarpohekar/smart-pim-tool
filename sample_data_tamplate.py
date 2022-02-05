@@ -6,7 +6,7 @@
 import pandas as pd
 
 
-df = pd.read_excel('sample_data.xlsx
+df = pd.read_excel('sample_data.xlsx')
 
 
 df[1].to_excel("list_column.xlsx")
@@ -22,7 +22,7 @@ df2 = pd.read_excel('sample_data.xlsx',sheet_name='page-2-table-1',index_col=0)
 print(df2)
 
 
-)
+
 
 df2.loc[0].to_excel('list_column1.xlsx')
 
