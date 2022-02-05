@@ -3,6 +3,7 @@
 @brief : this file contain varios function which will be used
 '''
 import os
+from re import template
 import tkinter as tk
 from tkinter import filedialog
 import camelot
@@ -43,3 +44,14 @@ def openload_tds():
     webbrowser.open_new(filename)
     return 0
 
+'''
+@function : openload_template()
+@brief    : using this function we can select and the file and open
+
+'''
+def openload_template():
+    file_path = filepath_funct()
+    template = os.path.basename(file_path)
+    print(template)
+    webbrowser.open_new(template)
+    return 0
