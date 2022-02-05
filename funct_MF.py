@@ -41,4 +41,5 @@ def openload_tds():
     filename = os.path.basename(file_path)
     print(filename)
     webbrowser.open_new(filename)
+    return 0
 
