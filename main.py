@@ -6,6 +6,7 @@
 import funct_MF
 
 
+
 filepath = ''
 
 if __name__=="__main__":
@@ -18,17 +19,27 @@ if __name__=="__main__":
                                1> Select and open the load TDS
                                2> Select the pdf File
                                3> Extract the table from pdf file
-                               4> Exit
-                               :  '''))
+                               4> Select load template file
+                               5> Select the Sample load tempplate file
+                               6> Exit
+                               :-  '''))
         if option ==1:
             funct_MF.openload_tds()
         
         elif option == 2:
             filepath = funct_MF.filepath_funct()
-            # print(filepath)
+            print(filepath)
         
         elif option == 3:
             funct_MF.table_extract(filepath)
+            
+        elif option == 4:
+            funct_MF.openload_template()
+        
+        
+        # elif option == 5:
+            
+                    
             
         else:
             exit()       
