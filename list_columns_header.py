@@ -1,12 +1,18 @@
 '''
 @File  : sample_data_template.py
-@brief : In this file have extraction of column header in list format from "sample_data.xlsx" by using pandas liabrary.
+@brief : In this file have extraction of column header in 
+         list format from "sample_data.xlsx" by using pandas liabrary.
 '''
 
 from tkinter import filedialog
 import pandas as pd
 
-
+'''
+@function : sample_column_header(filepath)
+@brief    : this function gives all column header in excel file
+@param    :  
+@return   : this will gives column header
+'''
 def sample_column_header(filepath):
     filepath = filedialog.askopenfilename()
     df = pd.read_excel(filepath)
@@ -20,6 +26,13 @@ def sample_column_header(filepath):
     print("columns header list :- ")
     print(columns_header)
     return 0
+
+'''
+@function : load_template_header(filepath)
+@ brief   : this function gives all column header in excel file
+@param    :  
+@return   : this will gives column header
+'''
 
 def load_template_header(filepath):
     filepath = filedialog.askopenfilename()
