@@ -19,7 +19,12 @@ def column_header():
     print(columns_header)
     return 0
 
-
+def load_template_header():
+    data = pd.read_excel('MultiConductor Load Sheet Template.xlsx')
+    columns_header = list(data.columns)
+    print("column header list :- ")
+    print(columns_header)
+    return 0
 
 
 
