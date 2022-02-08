@@ -38,35 +38,10 @@ def table_extract(filepath):
 @brief    : using this function we can select the file and open
 
 '''
-def openload_tds():
+def openload():
     file_path = filepath_funct()
     filename = os.path.basename(file_path)
     print(filename)
     webbrowser.open_new(filename)
     return 0
 
-'''
-@function : openload_template()
-@brief    : using this function we can select and open the original load template.
-
-'''
-def openload_template():
-    file_path = filepath_funct()
-    template = os.path.basename(file_path)
-    print(template)
-    webbrowser.open_new(template)
-    return 0
-
-
-
-'''
-@function : openload_sample()
-@brief    : using this function we can select and open sample load template
-
-'''
-def openload_sample():
-    file_path = filepath_funct()
-    sample_name = os.path.basename(file_path)
-    print(sample_name)
-    webbrowser.open_new(sample_name)
-    return 0
