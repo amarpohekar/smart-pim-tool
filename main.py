@@ -39,7 +39,7 @@ if __name__=="__main__":
             list_columns_header.load_template_header()
         
         elif option == 5:
-            list_columns_header.sample_column_header
+            list_columns_header.sample_column_header()
                 
         else:
             exit()       
