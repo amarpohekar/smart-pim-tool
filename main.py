@@ -36,10 +36,10 @@ if __name__=="__main__":
             print(load_template)
         
         elif option == 4:
-            funct_MF.openload()
+            list_columns_header.load_template_header()
         
         elif option == 5:
-            list_columns_header.column_header()
+            list_columns_header.sample_column_header
                 
         else:
             exit()       
