@@ -6,7 +6,7 @@
 import pandas as pd
 
 
-def column_header():
+def sample_column_header():
     df = pd.read_excel('sample_data.xlsx')
     list1 = list(df[1])
     df1 = pd.read_excel('sample_data.xlsx',sheet_name=1)
