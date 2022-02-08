@@ -20,11 +20,12 @@ if __name__=="__main__":
                                2> Select the pdf File
                                3> Extract the table from pdf file
                                4> Select load template file
-                               5> Select the Sample load tempplate file
-                               6> Exit
+                               5> Print all column header
+                               6> Select the Sample load tempplate file
+                               7> Exit
                                :-  '''))
         if option ==1:
-            funct_MF.openload_tds()
+            funct_MF.openload()
         
         elif option == 2:
             filepath = funct_MF.filepath_funct()
@@ -34,10 +35,10 @@ if __name__=="__main__":
             funct_MF.table_extract(filepath)
             
         elif option == 4:
-            funct_MF.openload_template()
+            funct_MF.openload()
         
         elif option == 5:
-            funct_MF.openload_sample()
+            funct_MF.openload()
                             
         else:
             exit()       
