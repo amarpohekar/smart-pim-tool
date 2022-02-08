@@ -8,6 +8,7 @@ import list_columns_header
 
 
 filepath = ''
+load_template =''
 
 if __name__=="__main__":
     print('''
@@ -26,20 +27,18 @@ if __name__=="__main__":
         
         if option == 1:
             filepath = funct_MF.filepath_funct()
-            print(filepath)
         
         elif option == 2:
             funct_MF.table_extract(filepath)
             
         elif option == 3:
-            load_template = funct_MF.filepath_funct()
-            print(load_template)
-        
+            filepath = funct_MF.filepath_funct()
+            
         elif option == 4:
-            list_columns_header.load_template_header()
+            list_columns_header.load_template_header(filepath)
         
         elif option == 5:
-            list_columns_header.sample_column_header()
+            list_columns_header.sample_column_header(filepath)
                 
         else:
             exit()       
