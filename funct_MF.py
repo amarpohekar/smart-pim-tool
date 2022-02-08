@@ -13,13 +13,14 @@ import webbrowser
 '''
 @function : filepath_funct()
 @brief    : this function used for getting pdf file path
-@return   : it will give filepath of pdf file insystem directory 
+@return   : it will give filepath of pdf file in system directory 
 '''
 
 def filepath_funct():
     filepath = filedialog.askopenfilename()
     print(filepath)
     return filepath
+
 
 '''
 @function : table_extract()
