@@ -17,9 +17,9 @@ list2=[]
 
 if __name__=="__main__":
     print('''
-          .
-          .
-          Welcome to the demo ''')
+          
+          
+                Welcome to the demo ''')
     while True == 1:
         option = int(input(''' Selct one of the following option
                                1> Select the pdf File
