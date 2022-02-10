@@ -12,6 +12,12 @@ import list_columns_header
 
 
 filepath = ''
+list1=[]
+list2=[]
+myDict={}
+repeatable=[]
+repeatative_value=''
+property= ''
 
 
 if __name__=="__main__":
@@ -24,9 +30,10 @@ if __name__=="__main__":
                                1> Select the pdf File
                                2> Extract the table from pdf file
                                3> Select load template file
-                               4> print all columns header from load tempplate file
-                               5> Print all column header Sample data
-                               6> Exit
+                               4> print all columns header in list from load tempplate file
+                               5> Print all column header in list fron Sample data
+                               6> create the Dictionnary and repeatable list by using refferance of lists of columns header of load template and sample data 
+                               7> Exit
                                :-  '''))
         
         if option == 1:
@@ -39,11 +46,17 @@ if __name__=="__main__":
             filepath = funct_MF.filepath_funct()
             
         elif option == 4:
-            list_columns_header.load_template_header(filepath)
+            list_columns_header.load_template_header()
         
         elif option == 5:
-            list_columns_header.sample_column_header(filepath)
-                
+            list_columns_header.sample_column_header()
+        
+        elif option == 6:
+            list1 = list_columns_header.sample_column_header()
+            list2 = list_columns_header.load_template_header()
+            funct_MF.myDatabase()
+            
+                    
         else:
             exit()       
                 
