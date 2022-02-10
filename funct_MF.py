@@ -10,6 +10,17 @@ from tkinter import filedialog
 import camelot
 import webbrowser
 
+from list_columns_header import load_template_header, sample_column_header
+# filepath=''
+myDict={}
+repeatable=[]
+property=''
+repeatative_value=''
+# list1=[]
+# list2=[]
+
+
+
 '''
 @function : filepath_funct()
 @brief    : this function used for getting pdf file path
@@ -34,15 +45,30 @@ def table_extract(filepath):
     table.export('sample_data.xlsx',f = 'excel')
     return 0
     
-'''
-@function : openload_tds()
-@brief    : using this function we can select the file and open
 
 '''
-def openload():
-    file_path = filepath_funct()
-    filename = os.path.basename(file_path)
-    print(filename)
-    webbrowser.open_new(filename)
-    return 0
+@function : myDatabase():
+@brief    : this function gives dictionary from two list of columns header.
+'''
+
+def myDatabase(list1,list2):
+    for i in list2:
+        print('select the value from below list',i,'\nby using number system,\n if in case does not find in list then gives 100 as input',list1)
+        value=int(input(''))
+        
+        if value==100:
+            property=print('Select the Specific value->: ')
+            
+        else:
+            property= list1[value-1]
+            myDict[i]=property
+            
+        repeatative_value=input('if value is repeatative print y or n for discard the value from reapeatable->: ')
+        if repeatative_value == y:
+            repeatable.append(i)
+        
+        print('myDict-->',myDict)
+        print('reapatable->',repeatable)
+        
+
 
