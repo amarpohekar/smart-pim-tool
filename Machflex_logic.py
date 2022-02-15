@@ -68,7 +68,7 @@ def myDatabase(list1,list2):
             if value==100:
                 hardcoded.append(i)
                 property=input('select the property->: ')
-                                    
+                myDict[i]= property                   
             else:
                 property= list1[value-1]
                 myDict[i]=property
@@ -76,7 +76,10 @@ def myDatabase(list1,list2):
             repeatative_value=input('Enter y to add this reapeated or n to remove from reapeatable-->: ')
             if repeatative_value == 'y':
                 repeatable.append(i)
+            print("Show dictionary:-> ",myDict)
+            print("Show repeatable list:-> ",repeatable)
+            print("Show hardcoded list:-> ",hardcoded)    
     except:
         print('error occur')
     
-    
+    print(myDict)
